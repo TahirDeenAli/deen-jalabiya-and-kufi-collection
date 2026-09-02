@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>cart | Deen Jalabiya Collection</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <img src="images/logo.jpeg" alt="Deen Jalabiya Collection Logo">
+
+            <h2>Deen Jalabiya Collection</h2>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+        
+            <li>
+                <a href="shop.html">Jalabiyas</a>
+            </li>
+
+            <li>
+                <a href="kufi.html">Kufi</a>
+           </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+<li>
+<a href="wishlist.html">
+<i class="fa-regular fa-heart"></i>
+<span id="wishlist-count"></span>
+</a>
+</li>
+
+<li>
+<a href="cart.html">
+<i class="fa-solid fa-bag-shopping"></i>
+<span id="cart-count"></span>
+</a>
+</li>
+
+        </ul>
+
+        <a href="shop.html" class="shop-btn">
+            Shop Now
+        </a>
+
+        <div class="menu-btn">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- =========================
+     PAGE HEADER
+========================== -->
+
+<section class="page-header">
+
+    <h1>Shopping Cart</h1>
+
+    <p>
+        Review your selected Jalabiyas before checkout.
+    </p>
+
+</section>
+
+<!-- =========================
+     CART SECTION
+========================== -->
+
+<section class="cart">
+
+    <div class="cart-container" id="cart-container">
+
+        <!--
+        Cart items will be inserted here automatically
+        by JavaScript.
+        -->
+
+    </div>
+
+    <div class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <p>
+
+            Total:
+            <strong id="cart-total">
+                GH₵0
+            </strong>
+
+        </p>
+
+        <a href="shop.html" class="secondary-btn">
+            Continue Shopping
+        </a>
+
+        <a href="checkout.html" class="primary-btn checkout-btn">
+
+            Proceed to Checkout
+
+       </a>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h3>Deen Jalabiya Collection</h3>
+
+            <p>
+
+                Premium Islamic clothing crafted with elegance,
+                comfort, and timeless style.
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="shop.html">Shop</a></li>
+
+                <li><a href="about.html">About</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="wishlist.html">Wishlist</a></li>
+
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>📍 Accra, Ghana</p>
+
+            <p>📞 +233 24 194 9756</p>
+
+            <p>📞 +233 20 135 1069</p>
+
+            <p>✉ deenjshop@gmail.com</p>
+
+        </div>
+<div class="footer-social">
+
+    <h4>Follow Us</h4>
+
+    <div class="social-icons">
+
+        <a href="http://Facebook.com/deenjalabiyacollection"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Facebook">
+
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a
+            href="https://instagram.com/deenjalabiya"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">
+
+            <i class="fab fa-instagram"></i>
+
+        </a>
+
+        <a href="#" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a
+            href="https://wa.me/233241949756"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp">
+
+            <i class="fab fa-whatsapp"></i>
+
+        </a>
+
+    </div>
+
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            &copy; 2026 Deen Jalabiya Collection.
+            All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- =========================
+     TOAST NOTIFICATION
+========================== -->
+
+<div id="toast" class="toast">
+
+    <i class="fas fa-check-circle"></i>
+
+    <span id="toast-message">
+
+        Product added successfully!
+
+    </span>
+
+</div>
+
+<!-- =========================
+     TOAST NOTIFICATION
+========================== -->
+
+<div id="toast" class="toast">
+
+    <i class="fas fa-check-circle"></i>
+
+    <span id="toast-message">
+
+        Product added successfully!
+
+    </span>
+
+</div>
+
+<!-- =========================
+     FLOATING CART
+========================== -->
+
+<a href="cart.html" class="floating-cart">
+
+    <i class="fas fa-shopping-bag"></i>
+
+    <span id="floating-cart-count">
+
+        0
+
+    </span>
+
+</a>
+
+<script src="js/products.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/product.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
